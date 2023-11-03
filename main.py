@@ -98,7 +98,7 @@ with col_a:
 with col_b:
     st.plotly_chart(fig_4, use_container_width=True)
 
-st.subheader("Winning Submissions")
+st.subheader("All Winning Submissions")
 st.dataframe(df, use_container_width=True)
 
 st.download_button(
