@@ -78,7 +78,7 @@ data_provider_counts.columns = ['Data Provider Combination', 'Count']
 data_provider_counts['Data Provider Combination'] = data_provider_counts['Data Provider Combination'].apply(lambda x: ', '.join(x))
 
 # Create a Pie Chart using Plotly Express
-fig_3 = px.pie(data_provider_counts, names='Data Provider Combination', values='Count', title="Data Provider Combinations Distribution [Submissions With >1 Data Provider]")
+fig_3 = px.pie(data_provider_counts, names='Data Provider Combination', values='Count', title="Data Provider Combinations [Submissions With >1 Data Provider]")
 
 top_authors = df.groupby("author_x_username")["prize_usd"].sum().reset_index()
 top_authors = top_authors.sort_values(by="prize_usd", ascending=False)
