@@ -81,7 +81,7 @@ data_provider_counts['Data Provider Combination'] = data_provider_counts['Data P
 fig_3 = px.pie(data_provider_counts, names='Data Provider Combination', values='Count', title="Data Provider Combinations Distribution [Submissions With >1 Data Provider]")
 
 top_authors = df.groupby("author_x_username")["prize_usd"].sum().reset_index()
-top_authors = top_authors.sort_values(by="prize_usd", ascending=False).head(10)
+top_authors = top_authors.sort_values(by="prize_usd", ascending=False)
 fig_4 = px.bar(top_authors, x="author_x_username", y="prize_usd", title="Top Authors by Prize Earnings")
 fig_4.update_xaxes(title_text="Author Username")
 fig_4.update_yaxes(title_text="Total Prize Earnings (USD)")
