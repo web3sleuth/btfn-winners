@@ -107,3 +107,13 @@ st.download_button(
     file_name='winners.csv',
     mime='text/csv',
 )
+
+st.markdown("""
+<p>
+    <ul>
+        <li>90% of the winning submissions heavily relied on on-chain analysis, while the remaining 10% took a different approach. Notably, some non-on-chain submissions, such as the comprehensive list and analysis of signatories to the Warren letter by <code>@hujkijs77289</code>, and a compilation of relevant clips and arguments from the Senate Committee on Banking, Housing, & Urban Affairs' hearing to address Hamas financing by <code>@yb_effect</code>, stood out. This indicates a diversification in data sources and analytical methodologies within the winning submissions.</li>
+        <li>When it comes to data providers, Flipside Crypto emerges as the dominant choice, used by 44.1% of the winning submissions. This preference suggests a high level of trust and reliability placed in Flipside Crypto's data services.</li>
+        <li>In cases where submissions utilized more than one data provider, the combinations of <code>Flipside Crypto/Arkham Intel</code> and <code>Flipside Crypto/BitQuery</code> were the most popular, each accounting for 33.3%. This popularity can be attributed to Flipside Crypto's LiveQuery function, which allows users to seamlessly integrate data from external sources. This suggests that platforms that offer versatile data integration capabilities are more likely to be favored by winning submissions.</li>
+        <li>Among the winners, <code>@mpier2000</code> stands out as the top earner, amassing an impressive $1500 for a single submission. In addition, five other winners earned $1000 each. Notably, some achieved this for a single submission, like <code>@LamokaAnalytics</code>, while others achieved it for two different submissions, such as <code>@ario_57_</code> and <code>@NFTherder</code>. Intriguingly, two winners, <code>@0xEddytailor</code> and <code>@Biseda_binam</code>, were awarded $500 twice for the same submission, which may be attributed to the exceptional quality or unique aspects of their work.</li>
+    </ul>
+</p>""", unsafe_allow_html=True)
